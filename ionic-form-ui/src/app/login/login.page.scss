@@ -1,0 +1,49 @@
+.auth-form ion-grid,
+.auth-form ion-row {
+    justify-content: center;
+}
+
+ion-title {
+    text-align: center;
+}
+
+.small-text {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.line {
+    align-items: center;
+    margin: 1em -1em;
+    color: #cccccc;
+    &:before,
+    &:after {
+        height: 1px;
+        margin: 0 1em;
+    }
+}
+
+.one-line {
+    &:before,
+    &:after {
+        background: #cccccc;
+    }
+}
+
+.divider {
+    display: flex;
+    &:before,
+    &:after {
+        content: "";
+        flex: 1;
+    }
+}
+
+.already {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}

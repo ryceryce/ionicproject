@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+
+    <form [formGroup]="loginForm">
+        <ion-item lines="full">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item lines="full">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+    </form>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-button (click)="doLogin()" type="submit" expand="block" color="danger">
+                    Sign In
+                </ion-button>
+                <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password</a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <span class="divider line one-line">or</span>
+    <span class="already">Don't have account yet?</span>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-center>
+                <ion-button [routerLink]="['/registration']" expand="block" color="primary">Register</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+</ion-content>
